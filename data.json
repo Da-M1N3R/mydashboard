@@ -1,0 +1,22 @@
+{
+  "portals": [
+    {
+      "id": "payslip",
+      "name": "YTL-ESS Portal",
+      "url": "https://ytl-ess.com/hrmsnet/default.aspx",
+      "username": "18222",
+      "password": "1wdv2efbx",
+      "description": "download monthly payslips",
+      "category": "HR"
+    },
+    {
+      "id": "leave",
+      "name": "YTL-eKiosk",
+      "url": "https://ekiosk.spytl.com/Account/Login",
+      "username": "31713",
+      "password": "12345qwerT",
+      "description": "Apply for leave and professional classes",
+      "category": "HR"
+    }
+  ]
+}
