@@ -1,22 +1,13 @@
 {
   "portals": [
     {
-      "id": "pc",
-      "name": "YTL laptop-PC",
-      "url": "none",
-      "username": "darwineswaran.lingam@ytl.com",
-      "password": "12345qwerT",
-      "description": "pc",
-      "category": "personal"
-    },
-    {
-      "id": "email",
-      "name": "YTL Outlook",
-      "url": "https://outlook.office.com/mail/inbox",
-      "username": "darwineswaran.lingam@ytl.com",
-      "password": "d.rK>^2)21@WiN",
-      "description": "email",
-      "category": "personal"
+      "id": "database",
+      "name": "YTL Helpdesk",
+      "url": "https://helpdesk.ytl.com/app/ytlgrp/ui/ssp/pages/home",
+      "username": "none",
+      "password": "none",
+      "description": "Requesting portal for stuff.",
+      "category": "Open"
     },
     {
       "id": "payslip",
@@ -24,7 +15,7 @@
       "url": "https://ytl-ess.com/hrmsnet/default.aspx",
       "username": "18222",
       "password": "1wdv2efbx",
-      "description": "download monthly payslips",
+      "description": "Get payslips and EA forms here.",
       "category": "HR"
     },
     {
@@ -42,16 +33,7 @@
       "url": "https://hk1.aconex.com/Logon",
       "username": "0162178140",
       "password": "12345qwerT x",
-      "description": "CRJGR database",
-      "category": "CRJGR"
-    },
-    {
-      "id": "database",
-      "name": "CIDB-CIMS",
-      "url": "https://cims.cidb.gov.my/smis/regcontractor/index.vbhtml",
-      "username": "darwineswaran.lingam@sippytl.com",
-      "password": "3fgNrx.8p3YFm$6",
-      "description": "CIDB",
+      "description": "CRJGR drawing & report database.",
       "category": "CRJGR"
     },
     {
@@ -69,17 +51,35 @@
       "url": "forgot",
       "username": "darwineswaran.lingam@sippytl.com",
       "password": "12345qwert",
-      "description": "idk",
+      "description": "Usually some Anti-Bribery Course here.",
       "category": "HR"
     },
     {
       "id": "database",
-      "name": "YTL Helpdesk",
-      "url": "https://helpdesk.ytl.com/app/ytlgrp/ui/ssp/pages/home",
-      "username": "none",
-      "password": "none",
-      "description": "Requesting portal for stuff.",
-      "category": "HR"
+      "name": "CIDB-CIMS",
+      "url": "https://cims.cidb.gov.my/smis/regcontractor/index.vbhtml",
+      "username": "darwineswaran.lingam@sippytl.com",
+      "password": "3fgNrx.8p3YFm$6",
+      "description": "CIDB Construction website.",
+      "category": "personal"
+    },
+    {
+      "id": "pc",
+      "name": "YTL laptop-PC",
+      "url": "none",
+      "username": "darwineswaran.lingam@ytl.com",
+      "password": "12345qwerT",
+      "description": "My own pc.",
+      "category": "personal"
+    },
+    {
+      "id": "email",
+      "name": "YTL Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "username": "darwineswaran.lingam@ytl.com",
+      "password": "d.rK>^2)21@WiN",
+      "description": "My own email.",
+      "category": "personal"
     }
   ]
 }

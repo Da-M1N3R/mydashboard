@@ -46,6 +46,12 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: relative;
       }
+      .open-card {
+        background: lightgreen;
+      }
+      .personal-card {
+        background: lightcoral;
+      }
       .card h2 {
         color: #333;
         margin-bottom: 5px;
@@ -129,9 +135,14 @@
 
         function render(items) {
           container.innerHTML = items
-            .map(
-              (p) => `
-                    <div class="card">
+            .map((p) => {
+              let cardClass = "card";
+              if (p.category.toLowerCase() === "open")
+                cardClass += " open-card";
+              if (p.category.toLowerCase() === "personal")
+                cardClass += " personal-card";
+              return `
+                    <div class="${cardClass}">
                         <span class="badge">${p.category}</span>
                         <h2>${p.name}</h2>
                         <p>${p.description}</p>
@@ -145,8 +156,8 @@
                             <a href="${p.url}" target="_blank" class="btn launch-btn">🚀 Launch</a>
                         </div>
                     </div>
-                `
-            )
+                `;
+            })
             .join("");
         }
 
