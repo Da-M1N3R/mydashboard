@@ -1,6 +1,24 @@
 {
   "portals": [
     {
+      "id": "pc",
+      "name": "YTL laptop-PC",
+      "url": "none",
+      "username": "darwineswaran.lingam@ytl.com",
+      "password": "12345qwerT",
+      "description": "pc",
+      "category": "personal"
+    },
+    {
+      "id": "email",
+      "name": "YTL Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "username": "darwineswaran.lingam@ytl.com",
+      "password": "d.rK>^2)21@WiN",
+      "description": "email",
+      "category": "personal"
+    },
+    {
       "id": "payslip",
       "name": "YTL-ESS Portal",
       "url": "https://ytl-ess.com/hrmsnet/default.aspx",
@@ -11,11 +29,47 @@
     },
     {
       "id": "leave",
-      "name": "YTL-eKiosk",
+      "name": "YTL ekiosk (iBoss Net)",
       "url": "https://ekiosk.spytl.com/Account/Login",
       "username": "31713",
       "password": "12345qwerT",
       "description": "Apply for leave and professional classes",
+      "category": "HR"
+    },
+    {
+      "id": "database",
+      "name": "Aconex Asia",
+      "url": "https://hk1.aconex.com/Logon",
+      "username": "0162178140",
+      "password": "12345qwerT x",
+      "description": "CRJGR database",
+      "category": "CRJGR"
+    },
+    {
+      "id": "database",
+      "name": "CIDB-CIMS",
+      "url": "https://cims.cidb.gov.my/smis/regcontractor/index.vbhtml",
+      "username": "darwineswaran.lingam@sippytl.com",
+      "password": "3fgNrx.8p3YFm$6",
+      "description": "CIDB",
+      "category": "CRJGR"
+    },
+    {
+      "id": "database",
+      "name": "YTL Integrated System",
+      "url": "https://spytl.com/IISLogin/",
+      "username": "darwineswaran.lingam@sippytl.com",
+      "password": "Sos2021Partz",
+      "description": "idk",
+      "category": "HR"
+    },
+    {
+      "id": "database",
+      "name": "YTL Frog OS",
+      "url": "forgot",
+      "username": "darwineswaran.lingam@sippytl.com",
+      "password": "12345qwert",
+      "description": "idk",
       "category": "HR"
     }
   ]
