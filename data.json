@@ -71,6 +71,15 @@
       "password": "12345qwert",
       "description": "idk",
       "category": "HR"
+    },
+    {
+      "id": "database",
+      "name": "YTL Helpdesk",
+      "url": "https://helpdesk.ytl.com/app/ytlgrp/ui/ssp/pages/home",
+      "username": "none",
+      "password": "none",
+      "description": "Requesting portal for stuff.",
+      "category": "HR"
     }
   ]
 }
