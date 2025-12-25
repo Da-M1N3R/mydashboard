@@ -111,23 +111,96 @@
       .hidden {
         display: none;
       }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f5f5f5;
+      }
+      .login-form {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+      .login-form h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .login-form input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .error {
+        color: red;
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
-    <header>
-      <h1>🏢 Company Portal Dashboard</h1>
-    </header>
+    <div id="login" class="login-container">
+      <div class="login-form">
+        <h2>🔐 Authentication Required</h2>
+        <input type="password" id="password" placeholder="Enter password" />
+        <button id="login-btn" class="btn">Login</button>
+        <p id="error" class="error hidden">
+          Incorrect password. Please try again.
+        </p>
+      </div>
+    </div>
 
-    <div class="container">
-      <input
-        type="text"
-        id="search"
-        placeholder="🔍 Type to search... (e.g., 'leave')"
-      />
-      <div id="cards" class="cards"></div>
+    <div id="main-content" class="hidden">
+      <header>
+        <h1>🏢 Company Portal Dashboard</h1>
+      </header>
+
+      <div class="container">
+        <input
+          type="text"
+          id="search"
+          placeholder="🔍 Type to search... (e.g., 'leave')"
+        />
+        <div id="cards" class="cards"></div>
+      </div>
     </div>
 
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginBtn = document.getElementById("login-btn");
+        const passwordInput = document.getElementById("password");
+        const errorMsg = document.getElementById("error");
+        const loginContainer = document.getElementById("login");
+        const mainContent = document.getElementById("main-content");
+
+        loginBtn.addEventListener("click", function () {
+          const password = passwordInput.value;
+          if (password === "0123") {
+            loginContainer.style.display = "none"; // Explicitly hide login
+            mainContent.style.display = "block"; // Explicitly show main content
+            window.scrollTo(0, 0); // Scroll to top of page
+            load(); // Load the main content
+          } else {
+            errorMsg.classList.remove("hidden");
+            passwordInput.value = "";
+            passwordInput.focus();
+          }
+        });
+
+        passwordInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            loginBtn.click();
+          }
+        });
+      });
+
       async function load() {
         const data = await fetch("data.json").then((r) => r.json());
         const search = document.getElementById("search");
@@ -178,8 +251,6 @@
         navigator.clipboard.writeText(text);
         alert("✅ Copied: " + text);
       }
-
-      load();
     </script>
   </body>
 </html>
